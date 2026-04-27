@@ -3,32 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Business</title>
+    <title>My Hub</title>
     <style>
         body {
             background-color: #111;
             color: white;
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
         }
-        h1 { margin-bottom: 20px; }
-        .btn {
-            background-color: #25D366;
-            color: white;
-            padding: 15px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
+        h1 { margin-bottom: 30px; }
+        .links-container {
+            width: 90%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
+        .btn {
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        .btn:active { transform: scale(0.95); }
+        
+        .youtube { background-color: #FF0000; }
+        .instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+        .whatsapp { background-color: #25D366; }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Business</h1>
-    <a href="https://wa.me/916239547690" class="btn">Contact on WhatsApp</a>
+
+    <h1>Kahan Jaana Chahte Ho?</h1>
+
+    <div class="links-container">
+        <a href="https://youtube.com/@fatehmight?si=fYxZdLmdd7Ht7xu3" class="btn youtube" target="_blank">Mera YouTube Channel</a>
+
+        <a href="https://www.instagram.com/fatehmight?igsh=MWR3ZTk5azF3aXJwaw==" class="btn instagram" target="_blank">Instagram Par Follow Karein</a>
+
+        <a href="https://wa.me/916239547690" class="btn whatsapp" target="_blank">WhatsApp Par Chat Karein</a>
+    </div>
+
 </body>
 </html>
+
